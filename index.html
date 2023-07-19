@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MG</title>
+    <link   rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <!-- Font Link cdn awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!--custom css file link -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+ <!--header section starts--> 
+ <header class="header">
+    <a href="#" class="logo"> <i class="fas fa-shopping-basket"></i>Adel Market</a>
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#features">Caractéristiques</a>
+        <a href="#products">Produits</a>
+        <a href="#categories">Catégories</a>
+        <a href="#review">Review</a>
+        <a href="#blogs">Blogs</a>
+    </nav>
+    <div class="icons">
+        <div class="fas fa-bars" id="menu-btn"></div>
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        <div class="fas fa-user" id="login-btn"></div>
+    </div>
+    <form action="" class="search-form">
+        <input type="search" id="search-box" placeholder="search here...">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+
+    <div class="shopping-cart">
+        <div id="panier">
+        <div class="sidebar">
+            <div class="head"><p>Mon Panier</p></div>
+            <div id="cartItem">Votre panier est vide</div>
+            <div class="foot">
+                <h3>Total</h3>
+                <h2 id="total">0 DT</h2>
+            </div>
+        </div>
+    </div>
+    </div>
+    <form action="" class="login-form">
+        <h3>login now</h3>
+        <input type="email" placeholder="your email" class="box">
+        <input type="password" placeholder="your password" class="box">
+        <p>forget your password <a href="#">click here</a></p>
+        <p>don't have an account <a href="#">create now</a></p>
+        <input type="submit" value="login now" class="btn">
+    </form>
+</header>
+
+
+
+
+
+
+ <!--Fin section Header--> 
+
+<!-- Debut partie home-->
+<section class="home" id="home">
+  <div class="content">
+    <h3>Produits <span>Frais</span> Et <span>Biologiques</span> Pour vous</h3>
+    
+    <a href="#" class="btn">Acheter maintenant</a>
+  </div>
+</section>
+
+<section class="features" id="features">
+    <h1 class="heading"> Notre <span>Services</span> </h1>
+    <div class="box-container">
+        <div class="box">
+            <img src="fresh.jpg" class="images" alt="">
+            <h3>fresh and organic</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+        <div class="box">
+            <img src="delivery.jpg" class="images" alt="">
+            <h3>free delivry</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+        <div class="box">
+            <img src="payment.jpg" class="images" alt="">
+            <h3>easy pyments</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+    </div>
+</section>
+
+
+<section class="products" id="products">
+    <h1 class="heading"> Notre <span>produits</span></h1>
+    <div class="swiper product-slider">
+        <div class="swiper-wrapper wrapper" id="root">
+          <!--  <div class="swiper-slide box" id="box">
+                <img src="orange2.jpg" id="image" alt="">
+                <h3>orange frais</h3>
+                <div class="price">2.5 <span>DT</span></div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <button class="btn"  onclick="addToCart()">Ajouter</button>
+            </div>
+        -->
+           
+        </div>
+
+    </div>
+
+   
+
+    </div>
+</section>
+
+<!--fin de la partie produit-->
+<section class="categories" id="categories">
+    <h1 class="heading">produit<span>categories</span></h1>
+    <div class="box-container">
+        <div class="box">
+            <img src="bio.jpg" alt="">
+            <h3>Biologiques</h3>
+            <p>jusqu'à 45%</p>
+            <a href="#" class="btn" >Acheter Maintenant</a>
+        </div>
+
+        <div class="box">
+            <img src="fruitfrai.jpg" alt="">
+            <h3>Fruits Frais</h3>
+            <p>jusqu'à 45%</p>
+            <a href="#" class="btn">Acheter Maintenant</a>
+        </div>
+        <div class="box">
+            <img src="laitier.jpg" alt="">
+            <h3>Produits laitiers</h3>
+            <p>jusqu'à 45%</p>
+            <a href="#" class="btn">Acheter Maintenant</a>
+        </div>
+        <div class="box">
+            <img src="viandefr.jpg" alt="">
+            <h3>viandes frais</h3>
+            <p>jusqu'à 45%</p>
+            <a href="#" class="btn">Acheter Maintenant</a>
+        </div>
+    </div>
+</section>
+
+<!-- section review-->
+<section class="review" id="review">
+    <h1 class="heading"> Avis de nos<span>Clients</span></h1>
+    <div class="swiper review-slider">
+        <div class="swiper-wrapper wrapper">
+            <div class="swiper-slider box">
+                <img src="foued.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Dignissimos, tenetur!</p>
+                <h3>Anis Bannour</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slider box">
+                <img src="chedly.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Dignissimos, tenetur!</p>
+                <h3>Foued khedhiri</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+            <div class="swiper-slider box">
+                <img src="eya.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Dignissimos, tenetur!</p>
+                <h3>Eya khedhiri</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+            <div class="swiper-slider box">
+                <img src="anis.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Dignissimos, tenetur!</p>
+                <h3>Chedly khedhiri</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+ <!--custom js file link-->
+ <script src="main.js"></script>   
+</body>
+</html>
